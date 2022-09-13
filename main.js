@@ -58,12 +58,16 @@ function newElement() {
   let day = document.createTextNode(inputDay);
   li.appendChild(input);
   li.appendChild(day);
-  if (inputValue === '' || inputDay === '') {
-    alert("You must write something!");
+  if (inputValue === "") {
+    alert("You must write Somethings to Doo!");
+  }
+  if (inputDay === "") {
+    alert("You must Choose A Day!");
   } else {
     document.getElementById("myUL").appendChild(li);
   }
   document.getElementById("myInput").value = "";
+  document.getElementById("weekdays").value = "";
 
   let span = document.createElement("SPAN");
   let txt = document.createTextNode("\u00D7");
