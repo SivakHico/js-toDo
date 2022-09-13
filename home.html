@@ -10,12 +10,26 @@
   <body>
     <div id="myDIV" class="header">
       <h2 style="margin: 5px">My To Do List</h2>
-      <input type="text" id="myInput" placeholder="Title..." />
-      <span onclick="newElement()" class="addBtn">Add</span>
-      <section>
-        <option value="Monday">Monday</option>
-      </section>
-      <span onclick="newElement()" class="addBtn">Add</span>
+      <div class="wrapper">
+        <div class="add-day">
+          <select name="weekdays" id="weekdays">
+            <option value="" selected disabled hidden>
+              Choose A Day Please
+            </option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Wednesday">Friday</option>
+            <option value="Thursday">saturday</option>
+            <option value="Thursday">Sunday</option>
+          </select>
+        </div>
+        <div class="add-todo">
+          <input type="text" id="myInput" placeholder="Title..." />
+          <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+      </div>
     </div>
 
     <ul id="myUL"></ul>

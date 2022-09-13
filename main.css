@@ -104,3 +104,20 @@ input {
 .addBtn:hover {
   background-color: #bbb;
 }
+
+.add-todo {
+  width: 75%;
+  float: right;
+}
+
+.add-day {
+  width: 25%;
+  float: left;
+}
+
+.add-day select {
+  padding: 10px;
+  color: #555;
+  background: #fff;
+  cursor: pointer;
+}
